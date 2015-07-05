@@ -1,0 +1,218 @@
+@import url("http://fonts.googleapis.com/css?family=Lato|Source+Code+Pro:400,300");
+@font-face {
+  font-family: 'League Gothic';
+  src: url("fonts/league-gothic/leaguegothic-regular-webfont.eot");
+  src: url("fonts/league-gothic/leaguegothic-regular-webfont.eot?#iefix") format('embedded-opentype'),
+  url("fonts/league-gothic/leaguegothic-regular-webfont.woff") format('woff'),
+  url("fonts/league-gothic/leaguegothic-regular-webfont.ttf") format('truetype'),
+  url("fonts/league-gothic/leaguegothic-regular-webfont.svg#league_gothicregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Default overrides --------------------------------------- */
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+p,
+.code,
+blockquote {
+  margin: 0 0 26px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'League Gothic', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 34px 0 12px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 26px 0 12px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+a {
+  color: #6666ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b2b2ff;
+}
+
+a:visited {
+  color: #0000b2;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+
+.caption {
+  color: #808080;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+
+/* Responsive layout ---------------------------------------- */
+@media (min-width: 768px) {
+  .meta {
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .content {
+    -webkit-box-flex: 2;
+    -o-box-flex: 2;
+    box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+
+  .meta {
+    padding: 30px;
+  }
+
+  .content {
+    padding: 30px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .content {
+    padding-top: 0 !important;
+  }
+
+  .meta {
+    padding: 20px 30px;
+  }
+
+  .content {
+    padding: 20px 30px;
+  }
+}
+
+
+/* Information sidebar ---------------------------------------- */
+.meta__author,
+.meta__date {
+  margin: 0;
+}
+
+.meta__date {
+  color: #808080;
+}
+
+/* Other posts */
+.other__post {
+  margin: 24px 0 0;
+  padding-bottom: 24px;
+}
+
+.other__post:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.other__post > div {
+  margin: 6px 0;
+}
+
+.other__post .title {
+  font-size: 16px;
+}
+
+.other__post .date {
+  color: #808080;
+}
+
+.other__post .snippet {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* Content ---------------------------------------- */
+.content {
+  -webkit-box-flex: 2;
+  -o-box-flex: 2;
+  box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.content img {
+    width: 100%;
+}
+
+.code,
+blockquote {
+  background: #e5e5e5;
+  line-height: 20px;
+  padding: 14px;
+}
+
+pre {
+  font-size: 14px;
+  overflow: scroll;
+  font-family: 'Source Code Pro', monospace;
+  tab-size:4;
+  -moz-tab-size: 4;
+  -o-tab-size:  4;
+}
+
+blockquote {
+  border-left: 3px solid #404040;
+}
+
+blockquote p {
+  margin: 0 0 10px;
+}
+
+blockquote cite {
+  color: #808080;
+  font-style: italic;
+}
+
+blockquote footer:before{
+  content: "\2014  ";
+}
