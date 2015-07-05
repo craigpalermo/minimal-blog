@@ -105,6 +105,10 @@ a:visited {
   .content {
     padding: 30px 60px;
   }
+
+  .snippet {
+    width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -127,6 +131,10 @@ a:visited {
 
   .content {
     padding: 20px 30px;
+  }
+
+  .snippet {
+    width: 100%;
   }
 }
 
